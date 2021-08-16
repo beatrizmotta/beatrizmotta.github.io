@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+
+    background-image: url('./assets/images/pexels-harrison-candlin-2441454.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Nunito', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoName {
+    padding: 0px 7px;
+    font-size: 5rem;
+    color: rgb(54, 54, 54);
+    background: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 0.63) 50%);
+    background-position: 0;
+    background-size: 200%;
+    transition: all 1s;
+}
+.highlighted {
+    background-position: -100%;
+    color: rgb(26, 26, 26);
+}
+.arrow {
+    opacity: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    filter: invert(100%);
+    user-select: none;
+    cursor: pointer;
+    transition: opacity ease-in 0.5s;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.63);
+    visibility: visible;
+    width: 1000px;
+    min-height: 50px;
+    opacity: 100%;
+    text-align: justify;
+    padding: 10px 20px;
+    font-weight: bolder;
+    transition: visibility 0s, opacity 0.5s, min-height 1s ease-in-out;
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+.before {
+    visibility: hidden;
+}
+.full {
+    min-height: 100px;
+}
