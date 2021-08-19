@@ -80,7 +80,7 @@ header {
     visibility: hidden;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     body {
         background-size: cover;
         width: 100vw;
@@ -95,7 +95,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     body {
         background-size: cover;
         width: 100vw;
@@ -110,7 +110,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         background-size: cover;
         width: 100vw;
@@ -125,7 +125,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) and (orientation: portrait) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
     body {
         background-size: cover;
         width: 100vw;
@@ -140,7 +140,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 1200px) and (orientation: portrait) {
+@media only screen and (min-width: 1200px) {
     body {
         background-size: cover;
         width: 100vw;
