@@ -50,7 +50,6 @@ header {
     background-color: rgba(255, 255, 255, 0.664);
     visibility: visible;
     width: 1000px;
-    min-height: 70px;
     opacity: 100%;
     text-align: justify;
     padding: 10px 20px;
@@ -58,7 +57,19 @@ header {
     text-align: center;
     font-size: 1.5em;
     border-radius: 3px;
-    transition: visibility 0s, opacity 0.5s, min-height 1s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.projects {
+    background-color: rgb(29, 29, 29);
+    color: rgb(160, 152, 152);
+    border-radius: 3px;
+    width: 40px;
 }
 
 .hidden {
@@ -68,12 +79,78 @@ header {
 .before {
     visibility: hidden;
 }
-.full {
-    min-height: 100px;
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    body {
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    .logoName {
+        font-size: 2.4em;
+    }
+    .content {
+        width: 80%;
+        font-size: 0.9em;
+    }
 }
 
-@media (max-width: 640px) {
-    .content, .logoName {
-        max-width: 490px;
+@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    body {
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    .logoName {
+        font-size: 3.2em;
+    }
+    .content {
+        width: 90%;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    body {
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    .logoName {
+        font-size: 3.3em;
+    }
+    .content {
+        width: 750px;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) and (orientation: portrait) {
+    body {
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    .logoName {
+        font-size: 4em;
+    }
+    .content {
+        width: 800px;
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (orientation: portrait) {
+    body {
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    .logoName {
+        font-size: 4em;
+    }
+    .content {
+        width: 800px;
+        font-size: 1.4em;
     }
 }
