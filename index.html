@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beatriz Motta</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beatriz Motta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1 class="logoName minimized">Beatriz Motta</h1>
-        <img class="arrow hidden" src="https://img.icons8.com/ios/100/000000/expand-arrow--v1.png" />
-        <div class="content before hidden">
-            Meu nome é Beatriz Motta, tenho 20 anos e sou desenvolvedora web trainee. <br />
-            Aqui estão alguns dos meus projetos:
+        <img class="arrow" src="https://img.icons8.com/ios/100/000000/expand-arrow--v1.png" />
+        <div class="content">
+            <p>
+                Meu nome é Beatriz Motta, tenho 20 anos e sou desenvolvedora web trainee. <br />
+                Aqui estão alguns dos meus projetos:
+            </p>
             <section class="projects">
-                [...]
+                <div class="project" id="pomodoro-timer">
+                    <div class="details">
+                        <h3>Pomodoro Timer</h3>
+                        <ul class="usedtech">
+                            <li>ReactJS</li>
+                        </ul>
+                        <ul>
+                            <li><a class="page" target="_blank" href="https://beatrizmotta.github.io/PomodoTimer/">
+                                <img src="./assets/icons/icons8-webpage-48.png" title="Visite a página" alt="Visite a página">
+                            </a></li>
+                            <li><a class="repo" href="https://github.com/beatrizmotta/PomodoTimer" target="_blank">
+                                <img src="./assets/icons/icons8-github-30.png" title="Veja o repositório" alt="Veja o repositório">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="preview"></div>
+                </div>
             </section>
 
         </div>
 
     </header>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>

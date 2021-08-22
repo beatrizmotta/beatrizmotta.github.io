@@ -22,6 +22,7 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .logoName {
     padding: 0px 7px;
     font-size: 5rem;
@@ -43,7 +44,7 @@ header {
     filter: invert(100%);
     user-select: none;
     cursor: pointer;
-    transition: opacity ease-in 0.5s;
+    transition: transform ease-in 1s;
 }
 
 .content {
@@ -55,29 +56,80 @@ header {
     padding: 10px 20px;
     font-weight: bolder;
     text-align: center;
-    font-size: 1.5em;
     border-radius: 3px;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
-    transition: visibility 0s, opacity 0.5s ease-in-out;
+.content > p {
+    font-size: 0.9em;
 }
 
 .projects {
-    background-color: rgb(29, 29, 29);
-    color: rgb(160, 152, 152);
-    border-radius: 3px;
-    width: 40px;
+    width: 95%;
+    opacity: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+.project {
+    width: fit-content;
+    height: 140.25px;
+    margin: 10px 10px;
+
 }
 
-.hidden {
-    opacity: 0%;
+.details, .preview {
+    width: 281.55px;
+    height: 140.25px;
 }
 
-.before {
-    visibility: hidden;
+.details {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(40, 44, 56, 0.521);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details ul {
+    padding: 0;
+}
+.details li {
+    display: inline-block;
+    font-size: 0.8em;
+}
+.details img {
+    filter: invert(100%);
+}
+
+.page img {
+    width: 30px;
+    height: 30px;
+}
+
+.usedtech li {
+    border: 1px solid white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.preview {
+    visibility: visible;
+    opacity: 1;
+    background-size: cover;
+    box-shadow: 2px 2px 20px 15px rgba(41, 15, 15, 0.103);
+}
+#pomodoro-timer .preview {
+    background-image: url('./assets/images/pomodoropreview.png');
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
